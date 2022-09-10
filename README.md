@@ -1,3 +1,3 @@
 # archibowl.github.io
-This is my personal website. It's a blog, it's a showcase for my projects, it's a project in itself.
-It's all of these things. Basically it's just a personal website but saying it's a list of things makes it sound more ambitious or whatever :P
+Welcome to the fortress. This is my personal website but I prefer to see it as a playground where I can try out
+different techniques and experiment with features.
