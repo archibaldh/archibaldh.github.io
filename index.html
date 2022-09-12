@@ -11,13 +11,14 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <audio src="theHeart.wav" id="bgMusic" autoplay></audio>
 </head>
-<body>
+<body onload="cookieAudio()">
     <div class="header">
-        <p>Archibowl</p>
-        <a href="projects.html">Projects</a>
-        <a class="active">Home</a>
+        <p>themulletman</p>
+        <a href="projects.html">projects</a>
+        <a class="active">home</a>
     </div>
     <div class="mainContainer">
     <div class="hero1 containerChild">
@@ -26,39 +27,142 @@
         </video>
         <div class="overlay"></div>
         <div class="heroContent1">
-            <h1>Welcome to my website.</h1>
+            <h1>Lights, Camera, Action.</h1>
             <i onclick="audio()" class="fa-solid fa-volume-high" id="musicBtn"></i>
         </div>
     </div>
-    <div class="hero2 containerChild">
-        <div class="scrollDiv">
-            <section class="news-message">
-                <p>What is this?</p>
-                <p>What is this?</p>
-                <p>What is this?</p>
-                <p>What is this?</p>
-                <p>What is this?</p>
-                <p>What is this?</p>
-                <p>What is this?</p>
-                <p>What is this?</p>
-                <p>What is this?</p>
-                <p>What is this?</p>
-            </section>
-            <section class="news-message">
-                <p>What is this?</p>
-                <p>What is this?</p>
-                <p>What is this?</p>
-                <p>What is this?</p>
-                <p>What is this?</p>
-                <p>What is this?</p>
-                <p>What is this?</p>
-                <p>What is this?</p>
-                <p>What is this?</p>
-                <p>What is this?</p>
-            </section>
+        <div class="hero2 containerChild">
+            <div class="scrollDiv">
+                <section class="news-message">
+                    <p>What is this?</p>
+                    <p>What is this?</p>
+                    <p>What is this?</p>
+                    <p>What is this?</p>
+                    <p>What is this?</p>
+                    <p>What is this?</p>
+                    <p>What is this?</p>
+                    <p>What is this?</p>
+                    <p>What is this?</p>
+                    <p>What is this?</p>
+                </section>
+                <section class="news-message">
+                    <p>What is this?</p>
+                    <p>What is this?</p>
+                    <p>What is this?</p>
+                    <p>What is this?</p>
+                    <p>What is this?</p>
+                    <p>What is this?</p>
+                    <p>What is this?</p>
+                    <p>What is this?</p>
+                    <p>What is this?</p>
+                    <p>What is this?</p>
+                </section>
+            </div>
+            <h1>What is this?</h1>
+            <div class="heroFlex">
+                <h2 id="forget"></h2>
+                <script>
+                    let i = 0;
+                    let txt = `Forget everything you know about the web. This isn't just a website, it's an experience. `;
+                    let speed = 70;
+
+                    function typeWriter() {
+                        if (i < txt.length) {
+                            document.getElementById("forget").innerHTML += txt.charAt(i);
+                            i++;
+                            setTimeout(typeWriter, speed);
+                        }
+                    }
+                    let h2 = document.getElementById('forget');
+
+                    // Get it's position in the viewport
+                    let bounding = h2.getBoundingClientRect();
+                    let isInViewport = function (elem) {
+                        let bounding = elem.getBoundingClientRect();
+                        return (
+                            bounding.top >= 0 &&
+                            bounding.left >= 0 &&
+                            bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                            bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+                        );
+                    }
+                        setInterval(function(){
+                            if (isInViewport(h2)) {
+                                typeWriter()
+                            } else{
+                                console.log("Is not in view!")
+                            }
+                        }, 1000);
+                </script>
+                <img src="sydney.jpg" alt="An unrelated image of Sydney because it looks good" height="450px"/>
+            </div>
         </div>
-        <h1>What is this?</h1>
-    </div>
+        <div class="hero3 containerChild">
+            <div class="scrollDiv">
+                    <section class="news-message">
+                        <p>Who are you?</p>
+                        <p>Who are you?</p>
+                        <p>Who are you?</p>
+                        <p>Who are you?</p>
+                        <p>Who are you?</p>
+                        <p>Who are you?</p>
+                        <p>Who are you?</p>
+                        <p>Who are you?</p>
+                        <p>Who are you?</p>
+                        <p>Who are you?</p>
+                    </section>
+                    <section class="news-message">
+                        <p>Who are you?</p>
+                        <p>Who are you?</p>
+                        <p>Who are you?</p>
+                        <p>Who are you?</p>
+                        <p>Who are you?</p>
+                        <p>Who are you?</p>
+                        <p>Who are you?</p>
+                        <p>Who are you?</p>
+                        <p>Who are you?</p>
+                        <p>Who are you?</p>
+                    </section>
+                </div>
+            <h1>Who are you?</h1>
+            <div class="heroFlex">
+                    <script>
+                        let i = 0;
+                        let txt = `Forget everything you know about the web. This isn't just a website, it's an experience. `;
+                        let speed = 70;
+
+                        function typeWriter() {
+                            if (i < txt.length) {
+                                document.getElementById("whoAreYou").innerHTML += txt.charAt(i);
+                                i++;
+                                setTimeout(typeWriter, speed);
+                            }
+                        }
+                        let who = document.getElementById('whoAreYou');
+
+                        // Get it's position in the viewport
+                        let bounding = who.getBoundingClientRect();
+                        let isInViewport = function (elem) {
+                            let bounding = elem.getBoundingClientRect();
+                            return (
+                                bounding.top >= 0 &&
+                                bounding.left >= 0 &&
+                                bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                                bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+                            );
+                        }
+                        setInterval(function(){
+                            if (isInViewport(who)) {
+                                typeWriter()
+                            } else{
+                                console.log("Is not in view!")
+                            }
+                        }, 1000);
+                    </script>
+                    <img src="me.jpg" alt="An unrelated image of Sydney because it looks good" height="450px"/>
+                    <h2 id="whoAreYou"></h2>
+                </div>
+        </div>
     </div>
 </body>
 </html>
