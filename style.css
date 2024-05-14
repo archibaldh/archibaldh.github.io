@@ -43,9 +43,12 @@ body{
 }
 .hero1{
     margin-top: -69px;
-    height: 100vh;
+    height: calc(100vh - 50px);
     width: 100%;
     position: relative;
+}
+.hero1 i{
+    margin-top: -20px;
 }
 .hero1 video {
     object-fit: cover;
@@ -172,4 +175,7 @@ h2{
 
 img{
     border-radius: 40px;
+}
+.heroImage{
+    width: 20vw;
 }
