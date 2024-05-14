@@ -1,10 +1,16 @@
+@font-face {
+    font-family: Futura;
+    src: url(FuturaPTDemi.otf);
+}
 body{
-    font-family: Poppins;
+    font-family: Futura;
     margin-right: 20px;
 }
 h1{
     font-weight: bold;
     font-size: 90px;
+    padding: 40px 0px;
+    margin: 0px;
 }
 .listLinks{
     font-size: 50px;
