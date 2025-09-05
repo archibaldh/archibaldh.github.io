@@ -6,8 +6,10 @@ body{
     font-family: Futura;
     margin-right: 20px;
 }
+*{
+        font-weight: 400 !important;
+}
 h1{
-    font-weight: 400;
     font-size: 90px;
     padding: 40px 0px;
     margin: 0px;
