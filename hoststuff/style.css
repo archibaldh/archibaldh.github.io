@@ -5,3 +5,6 @@ body p:first-of-type span{
     font-size: 26px !important;
     font-weight: bold;
 }
+#padding{
+    padding: 20px 40px;
+}
