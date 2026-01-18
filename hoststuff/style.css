@@ -1,6 +1,9 @@
-*{
-    background-color: white;
-    color: black;
+body{
+    padding: 20px 40px;
+    background-image: url(podium.png);
+    background-position: 97% 97%;
+    background-repeat: no-repeat;
+    background-size: 8%;
 }
 span{
     font-size: 18px !important;
