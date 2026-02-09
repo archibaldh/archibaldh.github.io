@@ -18,7 +18,7 @@ body p:first-of-type span{
 #watermark{
     bottom: 3% !important;
     left: 3% !important;
-    width: 8% !important;
+    width: 16% !important;
     height: auto !important;
     z-index: 100 !important;
     position: absolute !important;
