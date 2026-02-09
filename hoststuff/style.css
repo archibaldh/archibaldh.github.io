@@ -16,8 +16,8 @@ body p:first-of-type span{
     padding: 20px 40px;
 }
 #watermark{
-    bottom: 3% !important;
-    left: 3% !important;
+    bottom: 15% !important;
+    right: 10% !important;
     width: 16% !important;
     height: auto !important;
     z-index: 100 !important;
