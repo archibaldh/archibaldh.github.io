@@ -16,10 +16,10 @@ body p:first-of-type span{
     padding: 20px 40px;
 }
 #watermark{
-    margin-bottom: 3%;
-    margin-left: 3%;
-    width: 8%;
-    height: auto;
-    z-index: 100;
+    margin-bottom: 3% !important;
+    margin-left: 3% !important;
+    width: 8% !important;
+    height: auto !important;
+    z-index: 100 !important;
     
 }
