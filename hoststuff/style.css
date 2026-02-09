@@ -21,5 +21,5 @@ body p:first-of-type span{
     width: 16% !important;
     height: auto !important;
     z-index: 100 !important;
-    position: absolute !important;
+    position: fixed !important;
 }
