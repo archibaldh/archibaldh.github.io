@@ -1,9 +1,9 @@
 body{
     padding: 20px 40px;
-    background-image: url(https://archibaldh.github.io/hoststuff/podium.png);
+    /* background-image: url(https://archibaldh.github.io/hoststuff/podium.png);
     background-position: 97% 97%;
     background-repeat: no-repeat;
-    background-size: 8%;
+    background-size: 8%; */
 }
 span{
     font-size: 18px !important;
@@ -16,10 +16,10 @@ body p:first-of-type span{
     padding: 20px 40px;
 }
 #watermark{
-    margin-bottom: 3% !important;
-    margin-left: 3% !important;
+    bottom: 3% !important;
+    left: 3% !important;
     width: 8% !important;
     height: auto !important;
     z-index: 100 !important;
-    
+    position: absolute !important;
 }
